@@ -1,0 +1,34 @@
+extends layout.pug
+ 
+block variables
+    - let title = 'Accueil';
+ 
+block content
+        h1.text-center Hello homepage!
+        h1.text-center Bienvenue sur mon app Pug
+        p.text-center
+            | Voici la liste des derniers articles publiés.
+            a(href="#")
+
+        div.container 
+            //- p Bonjour #{name}
+
+            div.article 
+                h1 Title
+                p Lorem Ipsum blabla… 
+                a(href="/article.pug") Lire la suite
+                p.publier Publié le XX à XX
+            
+            div.article 
+                h1 Title
+                p Lorem Ipsum blabla… 
+                a(href="/article.pug") Lire la suite
+                p.publier Publié le XX à XX
+            
+            div.article 
+                h1 Title
+                p Lorem Ipsum blabla… 
+                a(href="/article.pug") Lire la suite
+                p.publier Publié le XX à XX
+
+            

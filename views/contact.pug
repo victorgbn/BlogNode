@@ -1,0 +1,12 @@
+extends layout.pug
+ 
+block variables
+    - let title = 'Contact';
+ 
+block content
+    div.container
+        h1.text-center Contact
+        form(action="contact/send", method="post")
+            input(type="text", name="text")
+            textarea(name="message", cols="30", rows="10")
+            button(type="submit") Send
